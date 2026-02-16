@@ -14,7 +14,7 @@ const VERSION = "5.0.0"
 const PREFIX = "."
 let botMode = "public"
 
-const AI_API_KEY = "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"
+const const AI_API_KEY = process.env.AI_API_KEY
 // ============================================
 
 const startTime = Date.now()
@@ -285,5 +285,6 @@ ${video.url}
 
     })
 }
+
 
 startBot()
